@@ -2,7 +2,7 @@
  * Created by zelengzhuang on 4/26/15.
  */
 
-window.map = {
+window.mappp = {
     "posY" :
     [
         {
