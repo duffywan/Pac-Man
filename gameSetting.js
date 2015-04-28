@@ -4,7 +4,16 @@
 window.angularTranslationLanguages = ['en', 'zh'];
 
   angular.module('myApp', [])
-    .run(function (realTimeSimpleService, resizeGameAreaService) {
+    .run(['$translate', 'realTimeSimpleService', 'resizeGameAreaService',
+        function ($translate, realTimeSimpleService, resizeGameAreaService) {
+         var node=document.createTextNode($translate.instant ("NEW_GAME") );
+            document.getElementById("newGame").appendChild (node);
+            node=document.createTextNode($translate.instant ("HIGH_SCORE") );
+            document.getElementById("highscore").appendChild (node);
+            node=document.createTextNode($translate.instant ("INSTRUCTION") );
+            document.getElementById("instructions").appendChild (node);
+            node=document.createTextNode($translate.instant ("INFO") );
+            document.getElementById("info").appendChild (node);  
    // resizeGameAreaService.setWidthToHeight(1);
    setRealTimeSimpleService(realTimeSimpleService);
    console.log(realTimeSimpleService);
@@ -1747,4 +1756,6 @@ window.angularTranslationLanguages = ['en', 'zh'];
         }
         //game.newGame();
   
-    });
+    }]).config(['$translateProvider', function($translateProvider) {
+
+        $translateProvider.init(['en', 'zh']) }]);
