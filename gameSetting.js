@@ -125,6 +125,8 @@ angular.module('myApp', [])
             this.width = this.canvas.width;
             this.height = this.canvas.height;
 
+            window.tmpcanvas = this.canvas;
+
             this.ghostFrightened = false;
             this.ghostFrightenedTimer = 240;
             this.ghostMode = 0;			// 0 = Scatter, 1 = Chase
@@ -197,11 +199,7 @@ angular.module('myApp', [])
             this.reset = function () {
             }
             this.newGame = function () {
-                var r = confirm("Are you sure you want to restart?");
-                if (r) {
-                    console.log("new Game");
-                    this.init(0);
-                }
+                this.init(0);
                 this.pauseResume();
             }
             this.nextLevel = function () {
@@ -241,13 +239,13 @@ angular.module('myApp', [])
                     this.closeMessage();
                     animationLoop();
                 }
-                else if (this.pause) {
+             /*   else if (this.pause) {
                     this.pause = false;
                     this.closeMessage();
-                }
+                } 
                 else {
                     this.showMessage("Pause", "Click to Resume");
-                }
+                } */
             }
             this.init = function (state) {
 
@@ -621,6 +619,7 @@ angular.module('myApp', [])
         }
 
         game = new Game();
+       // game.pauseResume();
 
 
         function Score() {
@@ -1457,7 +1456,7 @@ angular.module('myApp', [])
             $('#canvas-container').click(function () {
                 if (!(game.gameOver == true))    game.pauseResume();
             });
-
+          
             // Hammerjs Touch Events
             /*Hammer('#canvas-container').on("tap", function(event) {
              if (!(game.gameOver == true))	game.pauseResume();
@@ -1538,6 +1537,7 @@ angular.module('myApp', [])
             canvas = $("#myCanvas").get(0);
             context = canvas.getContext("2d");
 
+            window.tmpcontext = context;
 
             /* --------------- GAME INITIALISATION ------------------------------------
 
@@ -1558,6 +1558,8 @@ angular.module('myApp', [])
             // Refresh Score
             game.score.refresh(".score");
 
+            if (context == undefined)
+                context = window.tmpcanvas.getContext("2d");
             // Pills
             context.beginPath();
             context.fillStyle = "White";
@@ -1630,6 +1632,10 @@ angular.module('myApp', [])
         }
 
         function animationLoop() {
+            if (canvas === undefined)
+            {
+                canvas = window.tmpcanvas;
+            }
             canvas.width = canvas.width;
             //renderGrid(pacman.radius, "red");
             renderContent();
@@ -1711,4 +1717,6 @@ angular.module('myApp', [])
                     if ($('#game-content').is(':visible')) addHighscore();
             }
         }
+        game.newGame();
+  
     }]);
