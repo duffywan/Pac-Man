@@ -3,25 +3,53 @@
  */
 window.angularTranslationLanguages = ['en', 'zh'];
 
-angular.module('myApp', [])
-    .run(['$translate',
-        function ($translate, realTimeSimpleService, resizeGameAreaService) {
-            var node=document.createTextNode($translate.instant ("NEW_GAME") );
-            document.getElementById("newGame").appendChild (node);
-            node=document.createTextNode($translate.instant ("HIGH_SCORE") );
-            document.getElementById("highscore").appendChild (node);
-            node=document.createTextNode($translate.instant ("INSTRUCTION") );
-            document.getElementById("instructions").appendChild (node);
-            node=document.createTextNode($translate.instant ("INFO") );
-            document.getElementById("info").appendChild (node);
-            //resizeGameAreaService.setWidthToHeight(1);
-            //window.setRealTimeSimpleService(realTimeSimpleService);
-        }]).config(['$translateProvider', function($translateProvider) {
-        'use strict';
-
-        $translateProvider.init(['en', 'zh']);
-
-
+  angular.module('myApp', [])
+    .run(function (realTimeSimpleService, resizeGameAreaService) {
+   // resizeGameAreaService.setWidthToHeight(1);
+   setRealTimeSimpleService(realTimeSimpleService);
+   console.log(realTimeSimpleService);
+   console.log("1231231");
+   console.log(window.parent === window);
+   isOngoing = false;
+     function gotStartMatch(params) {
+		 if (!isOngoing) {
+			 game.newGame();
+		 }
+		 console.log("start match");
+    isOngoing = true;
+    var yourPlayerIndex = params.yourPlayerIndex;
+    var playersInfo = params.playersInfo;
+    var numberOfPlayers = playersInfo.length;
+    realTimeSimpleService.sendReliableMessage('Reliable');
+    realTimeSimpleService.sendUnreliableMessage('Unreliable');
+    console.log("gotStartMatch: yourPlayerIndex=" + yourPlayerIndex + " numberOfPlayers=" + numberOfPlayers);
+    var scores = [];
+    for (var i = 0; i < numberOfPlayers; i++) {
+      scores.push(42);
+    }
+	
+	
+    realTimeSimpleService.endMatch(scores);
+  }
+  function gotMessage(params) {
+    var fromPlayerIndex = params.fromPlayerIndex;
+    var message = params.message;
+    console.log("msg=" + message + " from " + fromPlayerIndex);
+  }
+  function gotEndMatch(endMatchScores) {
+    console.log("gotEndMatch:" + endMatchScores);
+  }
+   
+  function setRealTimeSimpleService(realTimeSimpleService) {
+    window.realTimeSimpleService = realTimeSimpleService;
+	console.log("init");
+    realTimeSimpleService.init({
+      gotStartMatch: gotStartMatch,
+      gotMessage: gotMessage,
+      gotEndMatch: gotEndMatch
+    });
+  }
+    
 
 
         var canvas;
@@ -1717,6 +1745,6 @@ angular.module('myApp', [])
                     if ($('#game-content').is(':visible')) addHighscore();
             }
         }
-        game.newGame();
+        //game.newGame();
   
-    }]);
+    });
