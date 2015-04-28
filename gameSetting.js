@@ -657,7 +657,8 @@ window.angularTranslationLanguages = ['en', 'zh'];
 
         game = new Game();
        // game.pauseResume();
-
+            var datecur = new Date;
+            var dateold = new Date;
 
         function Score() {
             this.score = 0;
@@ -668,7 +669,10 @@ window.angularTranslationLanguages = ['en', 'zh'];
                 this.score += i;
             }
             this.refresh = function (h) {
-                $(h).html("Score: " + this.score);
+                datecur = new Date;
+                var rrr = Math.round (1e3 / (datecur - dateold));
+                $(h).html("FPS: " + rrr);
+                dateold = datecur;
             }
 
         }
