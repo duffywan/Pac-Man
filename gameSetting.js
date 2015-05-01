@@ -3,17 +3,9 @@
  */
 window.angularTranslationLanguages = ['en', 'zh'];
 
-  angular.module('myApp', [])
+  angular.module('myApp')
     .run(['$translate', 'realTimeSimpleService', 
         function ($translate, realTimeSimpleService) {
-         var node=document.createTextNode($translate.instant ("NEW_GAME") );
-            document.getElementById("newGame").appendChild (node);
-            node=document.createTextNode($translate.instant ("HIGH_SCORE") );
-            document.getElementById("highscore").appendChild (node);
-            node=document.createTextNode($translate.instant ("INSTRUCTION") );
-            document.getElementById("instructions").appendChild (node);
-            node=document.createTextNode($translate.instant ("INFO") );
-            document.getElementById("info").appendChild (node);  
    // resizeGameAreaService.setWidthToHeight(1);
    setRealTimeSimpleService(realTimeSimpleService);
    console.log(realTimeSimpleService);
