@@ -1,7 +1,9 @@
 /**
  * Created by zelengzhuang on 4/27/15.
  */
-window.angularTranslationLanguages = ['en', 'zh'];
+
+
+
 
   angular.module('myApp')
     .run(['$translate', 'realTimeSimpleService', 
