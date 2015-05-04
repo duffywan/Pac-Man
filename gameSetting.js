@@ -242,7 +242,7 @@
                 var html = "";
                 var i;
                 for (i = 0; i < count; i++) {
-                    html += " <img src='img/heart.png'>";
+                    html += " <img src='imgs/heart.png'>";
                 }
                 $(".lives").html("Lives: " + html);
 
@@ -613,10 +613,10 @@
 
                 // initalize Ghosts, avoid memory flooding
                 if (pinky == null) {
-                    pinky = new Ghost("pinky", 7, 5, 'img/pinky.svg', 2, 2);
-                    inky = new Ghost("inky", 8, 5, 'img/inky.svg', 13, 11);
-                    blinky = new Ghost("blinky", 9, 5, 'img/blinky.svg', 13, 0);
-                    clyde = new Ghost("clyde", 10, 5, 'img/clyde.svg', 2, 11);
+                    pinky = new Ghost("pinky", 7, 5, 'imgs/pinky.svg', 2, 2);
+                    inky = new Ghost("inky", 8, 5, 'imgs/inky.svg', 13, 11);
+                    blinky = new Ghost("blinky", 9, 5, 'imgs/blinky.svg', 13, 0);
+                    clyde = new Ghost("clyde", 10, 5, 'imgs/clyde.svg', 2, 11);
                 }
                 else {
                     //console.log("ghosts reset");
@@ -769,11 +769,11 @@
                 this.dazzled = false;
             }
             this.dazzleImg = new Image();
-            this.dazzleImg.src = 'img/dazzled.svg';
+            this.dazzleImg.src = 'imgs/dazzled.svg';
             this.dazzleImg2 = new Image();
-            this.dazzleImg2.src = 'img/dazzled2.svg';
+            this.dazzleImg2.src = 'imgs/dazzled2.svg';
             this.deadImg = new Image();
-            this.deadImg.src = 'img/dead.svg';
+            this.deadImg.src = 'imgs/dead.svg';
             this.direction = right;
             this.radius = pacman.radius;
             this.draw = function (context) {

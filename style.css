@@ -42,7 +42,7 @@ html, body {
     min-height: 100%;
     height: 100%;
 	line-height: 23px;
-	background: url('img/bg-pattern-black.png') repeat;
+	background: url('imgs/bg-pattern-black.png') repeat;
     text-align: center;
 	}
 body {
@@ -101,7 +101,7 @@ margin: 0;
 }
 ul.nav.sub {
 background-color: rgba(0,0,0,0.3);
-background/*\**/: url(img/bg/black_30.png)\9;
+background/*\**/: url(imgs/bg/black_30.png)\9;
 display: none;
 }
 ul.nav.sub.active {
@@ -119,8 +119,8 @@ ul.nav.sub li{
 padding-left: 2.8em;
 }
 
-ul.nav li:hover { background-color: rgba(255,255,255,0.2); background/*\**/: url(img/bg/white_20.png)\9; *background: url(img/bg/white_20.png); padding-left: 2.5em;}
-ul.nav li.active { background-color: rgba(255,255,255,0.1); background/*\**/: url(img/bg/white_20.png)\9; *background: url(img/bg/white_20.png);}
+ul.nav li:hover { background-color: rgba(255,255,255,0.2); background/*\**/: url(imgs/bg/white_20.png)\9; *background: url(imgs/bg/white_20.png); padding-left: 2.5em;}
+ul.nav li.active { background-color: rgba(255,255,255,0.1); background/*\**/: url(imgs/bg/white_20.png)\9; *background: url(imgs/bg/white_20.png);}
 
 ul.nav a, ul.nav a:link, ul.nav a:active, ul.nav a:visited, ul.nav a:hover, ul.nav a:focus { color: rgb(31,52,4); text-decoration: none; font-size: 1.5em;}
 
@@ -138,7 +138,7 @@ ul.nav a, ul.nav a:link, ul.nav a:active, ul.nav a:visited, ul.nav a:hover, ul.n
 	margin: 30px;
 	max-width: 700px;
 	background: rgba(0,0,0,0.4);
-	background/*\**/: url(img/bg/black_40.png)\9;
+	background/*\**/: url(imgs/bg/black_40.png)\9;
 	color: rgba(255,255,255,0.9);
 	color/*\**/: rgb(250,250,250)\9;
 	padding: 4em;
@@ -388,7 +388,7 @@ input[type=text]:hover, input[type=text]:focus, input[type=password]:hover, inpu
 
     .main {
         background: rgba(0,0,0,0.4);
-        background/*\**/: url(img/bg/black_40.png)\9;
+        background/*\**/: url(imgs/bg/black_40.png)\9;
 		background-attachment: fixed;
 	}
 	.header, .content, .footer {
@@ -408,7 +408,7 @@ html, body {	height: auto;}
 
 .main {	background: none; }
 body { 	background: rgba(0,0,0,0.4);
-        background/*\**/: url(img/bg/black_40.png)\9;
+        background/*\**/: url(imgs/bg/black_40.png)\9;
 	}
 
 
