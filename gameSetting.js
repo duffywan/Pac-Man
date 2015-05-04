@@ -30,9 +30,7 @@
     for (var i = 0; i < numberOfPlayers; i++) {
       scores.push(42);
     }
-	
-	
-    realTimeSimpleService.endMatch(scores);
+   // realTimeSimpleService.endMatch(scores);
   }
   function gotMessage(params) {
     var fromPlayerIndex = params.fromPlayerIndex;
