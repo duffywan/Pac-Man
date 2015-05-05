@@ -5,9 +5,9 @@
 
 
 
-  angular.module('myApp')
-      .run(['$translate', '$log', 'realTimeService', 'randomService',
-          function ($translate, $log, realTimeService, randomService) {
+  angular.module('myApp', ['ngTouch', 'ui.bootstrap'])
+      .run(['$log', 'realTimeService', 'randomService',
+          function ($log, realTimeService, randomService) {
    // resizeGameAreaService.setWidthToHeight(1);
    setRealTimeSimpleService(realTimeSimpleService);
    console.log(realTimeSimpleService);
