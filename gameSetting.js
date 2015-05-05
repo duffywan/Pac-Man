@@ -1752,6 +1752,4 @@
         }
         //game.newGame();
   
-    }]).config(['$translateProvider', function($translateProvider) {
-
-        $translateProvider.init(['en', 'zh']) }]);
+    }]);
