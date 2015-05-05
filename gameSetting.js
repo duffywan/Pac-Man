@@ -6,8 +6,8 @@
 
 
   angular.module('myApp')
-    .run(['$translate', 'realTimeSimpleService', 
-        function ($translate, realTimeSimpleService) {
+      .run(['$translate', '$log', 'realTimeService', 'randomService',
+          function ($translate, $log, realTimeService, randomService) {
    // resizeGameAreaService.setWidthToHeight(1);
    setRealTimeSimpleService(realTimeSimpleService);
    console.log(realTimeSimpleService);
