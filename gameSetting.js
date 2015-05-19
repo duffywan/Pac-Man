@@ -278,7 +278,7 @@
             this.init = function (state) {
 
                 console.log("init game " + state);
-                
+
                 $.ajax({
                     url: mapConfig,
                     async: false,
@@ -358,8 +358,6 @@
 
         game = new Game();
        // game.pauseResume();
-            var datecur = new Date;
-            var dateold = new Date;
 
         function Score() {
             this.score = 0;
@@ -370,10 +368,7 @@
                 this.score += i;
             }
             this.refresh = function (h) {
-                datecur = new Date;
-                var rrr = Math.round (1e3 / (datecur - dateold));
-                $(h).html("FPS: " + rrr);
-                dateold = datecur;
+                $(h).html("SCORE: " + this.score);
             }
 
         }
