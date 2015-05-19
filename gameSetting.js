@@ -220,10 +220,6 @@
                 this.map.posY[y].posX[x].type = val;
             }
 
-            this.toggleSound = function () {
-                this.soundfx == 0 ? this.soundfx = 1 : this.soundfx = 0;
-                $('#mute').toggle();
-            }
             this.reset = function () {
             }
             this.newGame = function () {
