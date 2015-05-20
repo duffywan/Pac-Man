@@ -8,7 +8,9 @@
   angular.module('myApp', ['ngTouch', 'ui.bootstrap'])
       .run(['$log', 'realTimeSimpleService', 'randomService','resizeGameAreaService',
           function ($log, realTimeSimpleService, randomService, resizeGameAreaService) {
-    resizeGameAreaService.setWidthToHeight(2);
+
+
+              resizeGameAreaService.setWidthToHeight(1.38);
 
    setRealTimeSimpleService(realTimeSimpleService);
    console.log(realTimeSimpleService);
@@ -1500,25 +1502,25 @@
             /*Hammer('#canvas-container').on("tap", function(event) {
              if (!(game.gameOver == true))	game.pauseResume();
              });*/
-            Hammer('.gameArea').on("swiperight", function (event) {
+            Hammer('.container').on("swiperight", function (event) {
                 if ($('#game-content').is(":visible")) {
                     event.gesture.preventDefault();
                     pacman.directionWatcher.set(right);
                 }
             });
-            Hammer('.gameArea').on("swipeleft", function (event) {
+            Hammer('.container').on("swipeleft", function (event) {
                 if ($('#game-content').is(":visible")) {
                     event.gesture.preventDefault();
                     pacman.directionWatcher.set(left);
                 }
             });
-            Hammer('.gameArea').on("swipeup", function (event) {
+            Hammer('.container').on("swipeup", function (event) {
                 if ($('#game-content').is(":visible")) {
                     event.gesture.preventDefault();
                     pacman.directionWatcher.set(up);
                 }
             });
-            Hammer('.gameArea').on("swipedown", function (event) {
+            Hammer('.container').on("swipedown", function (event) {
                 if ($('#game-content').is(":visible")) {
                     event.gesture.preventDefault();
                     pacman.directionWatcher.set(down);
