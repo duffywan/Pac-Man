@@ -6,8 +6,8 @@
 
 
   angular.module('myApp', ['ngTouch', 'ui.bootstrap'])
-      .run(['$log', '$rootScope', '$scope', 'realTimeSimpleService', 'randomService','resizeGameAreaService',
-          function ($log, $rootScope, $scope, realTimeSimpleService, randomService, resizeGameAreaService) {
+      .run(['$log', 'realTimeSimpleService', 'randomService','resizeGameAreaService',
+          function ($log, realTimeSimpleService, randomService, resizeGameAreaService) {
 
 
    resizeGameAreaService.setWidthToHeight(1.38);
