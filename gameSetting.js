@@ -228,7 +228,7 @@
             this.reset = function () {
             }
             this.newGame = function () {
-                game.gameOver = true;
+                game.gameOver = false;
                 this.init(0);
                 this.pauseResume();
             }
