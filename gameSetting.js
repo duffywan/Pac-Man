@@ -18,7 +18,6 @@
    console.log(window.parent === window);
    isOngoing = false;
      function gotStartMatch(params) {
-         $('#playerName').off("focus");
 		// if (!isOngoing) {
 			 game.newGame();
 		 //}
@@ -229,6 +228,7 @@
             this.reset = function () {
             }
             this.newGame = function () {
+                $('#playerName').off("focus");
                 this.init(0);
                 this.pauseResume();
             }
