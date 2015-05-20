@@ -73,7 +73,6 @@ input[type="text"]:hover, input[type="text"]:focus, input[type="password"]:hover
 .canvas { position:absolute; padding-top: 20px;}
 .main {width: 100%; max-width: 660px; margin: 10px auto; position: static; left: auto;}
 .content { width: 100%; max-width: 540px; text-align: left; margin: 0;}
-.container {text-align: center; margin:0; padding: 0;}
 .wrapper { padding:0;}
 .game  { max-width: 540px; margin: auto; }
 
@@ -136,37 +135,37 @@ audio {display: block; }
 
 .description { display: none; }
 
-@media screen and (max-width: 1050px) {
-	html, body { background: rgb(0,0,0);}
-}
-@media screen and (max-width: 650px) {
-	.game { width: 93%;}
-	.content { max-width: none; }
-	#menu-buttons .button { background: rgba(255,255,255,0.1); }
-	.button:hover { background: rgba(255,255,255,0.3); }
-	.button#back { top: 0; }
-}
+/*@media screen and (max-width: 1050px) {*/
+	/*html, body { background: rgb(0,0,0);}*/
+/*}*/
+/*@media screen and (max-width: 650px) {*/
+	/*.game { width: 93%;}*/
+	/*.content { max-width: none; }*/
+	/*#menu-buttons .button { background: rgba(255,255,255,0.1); }*/
+	/*.button:hover { background: rgba(255,255,255,0.3); }*/
+	/*.button#back { top: 0; }*/
+/*}*/
 
-@media screen and (max-width: 400px) {
-	
-	.nomobile {display: none; }
-	.mobile {display: block; }
-	
-	html, body { 
-		overflow-x: hidden; 
-		height: 100%;
-		}
-	
-	.main { margin: 10px auto; }
-	.content { min-height: 0; }
-	
-	.controlButton {
-		width: 60px;
-		height: 60px;
-		line-height: 40px;
-		font-size: 40px;
-	}
-	.controls-right .controlButton { right: -55%; }
+/*@media screen and (max-width: 400px) {*/
+	/**/
+	/*.nomobile {display: none; }*/
+	/*.mobile {display: block; }*/
+	/**/
+	/*html, body { */
+		/*overflow-x: hidden; */
+		/*height: 100%;*/
+		/*}*/
+	/**/
+	/*.main { margin: 10px auto; }*/
+	/*.content { min-height: 0; }*/
+	/**/
+	/*.controlButton {*/
+		/*width: 60px;*/
+		/*height: 60px;*/
+		/*line-height: 40px;*/
+		/*font-size: 40px;*/
+	/*}*/
+	/*.controls-right .controlButton { right: -55%; }*/
 	/*canvas#myCanvas { margin: 5px auto; }	*/
 
-}
+/*}*/

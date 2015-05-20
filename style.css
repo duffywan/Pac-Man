@@ -232,44 +232,44 @@ span.portfolio-label {
 }
 
 
-@media screen and (max-width: 1500px) {
-    .main {
-        position:absolute;
-        left: 320px;
-    }
-}
+/*@media screen and (max-width: 1500px) {*/
+    /*.main {*/
+        /*position:absolute;*/
+        /*left: 320px;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 1040px) {
-	.box2 { width: 45%;}
-	.box3 { width: 27%;}
-	.portfolio-tile { width: 175px; height: 175px; }
-	.portfolio-tile div { top: 140px; }
-}
+/*@media screen and (max-width: 1040px) {*/
+	/*.box2 { width: 45%;}*/
+	/*.box3 { width: 27%;}*/
+	/*.portfolio-tile { width: 175px; height: 175px; }*/
+	/*.portfolio-tile div { top: 140px; }*/
+/*}*/
 
-@media screen and (max-width: 800px) {
-	.portfolio-tile { width: 150px; height: 150px; margin: 0 7px 7px 0;}
-	.portfolio-tile div { top: 115px; }
-}
+/*@media screen and (max-width: 800px) {*/
+	/*.portfolio-tile { width: 150px; height: 150px; margin: 0 7px 7px 0;}*/
+	/*.portfolio-tile div { top: 115px; }*/
+/*}*/
 
-@media screen and (max-width: 650px) {
-	.portfolio-tile {
-		width: 200px;
-		height: 200px;
-		left: 50%;
-		position: relative;
-		margin-left: -100px;
-		display: block;
-	}
-	.portfolio-tile div {
-	top: 165px;
-	visibility: visible;
-	}
-}
+/*@media screen and (max-width: 650px) {*/
+	/*.portfolio-tile {*/
+		/*width: 200px;*/
+		/*height: 200px;*/
+		/*left: 50%;*/
+		/*position: relative;*/
+		/*margin-left: -100px;*/
+		/*display: block;*/
+	/*}*/
+	/*.portfolio-tile div {*/
+	/*top: 165px;*/
+	/*visibility: visible;*/
+	/*}*/
+/*}*/
 
-@media screen and (max-width: 320px) {
-	.box2 { width: 42%;}
-	.box3 { width: 25%;}
-}
+/*@media screen and (max-width: 320px) {*/
+	/*.box2 { width: 42%;}*/
+	/*.box3 { width: 25%;}*/
+/*}*/
 
 
 /*---------------------------------------------------------------------
@@ -352,103 +352,14 @@ input[type=text]:hover, input[type=text]:focus, input[type=password]:hover, inpu
 
 /* Mobile CSS - Medium (Tablets, small Screens) */
 
-@media screen and (max-width: 1050px) {
+/**/
 
-    .main {
-        background: rgba(0,0,0,0.4);
-		background-attachment: fixed;
-	}
-	.header, .content, .footer {
-        margin: 0;
-        max-width: none;
-        width: auto;
-        height:100%;
-        background: none;
-    }
-
-}
-
-/* Mobile CSS - Small (Smartphones) */
-@media screen and (max-width: 650px) {
-
-html, body {	height: auto;}
-
-.main {	background: none; }
-body { 	background: rgba(0,0,0,0.4);
-	}
-
-
-h1 {
-	font-size: 1.8em;
-}	
-
-.mobile {
-	display: block;
-}
-.nomobile { 
-	display: none !important;
-}
-.logo { 
-	height: 90px;
-	width: auto;
-	/*display: inline-block;
-	float: left;*/
-	margin: 5px auto 5px auto;
-}
-
-.sidebar { 
-	width: 100%;
-	height: auto;
-	position:relative;
-}	
-
-.header, .content, .footer { 
-	margin: 0;
-	max-width: 650px;
-	/*padding: 5px 10px;*/
-	padding: 5px 0;
-	}
-	
-.main { 
-	position: relative;
-	left: 0;
-	width: 100%;	
-	overflow-x: hidden;
-
-	}
-
-.header > *, .content > *, .footer > * { 	
-	margin: 5px 10px;
-}
-.footer { position: relative; margin-bottom: 0; height: 40px;}
-
-ul.nav {
-	margin: 0;
-	text-align: center;
-}
-	
-ul.nav.sub {
-	margin: 0 auto;
-	background: rgba(0,0,0,0.4);
-	}
-
-ul.nav li, ul.nav.sub li{
-	padding: 0 0.5em;
-	margin: 0;
-	display: inline-block;
-	background: none;
-	}
-ul.nav li:hover, ul.nav.sub li:hover {
-	padding: 0 0.5em;
-	}
-}
-
-@media screen and (max-width: 360px) {
-	ul.nav.sub li { display: block; }
-	.box2, .box3 { display: block; width: 100%;}
-}	
-	
-@media screen and (max-width: 320px) {
-	ul.nav li { margin: 0; padding: 0 0.3em;}
-	ul.nav li:hover, ul.nav.sub li:hover { padding: 0 0.3em; }
-}
+/*@media screen and (max-width: 360px) {*/
+	/*ul.nav.sub li { display: block; }*/
+	/*.box2, .box3 { display: block; width: 100%;}*/
+/*}	*/
+	/**/
+/*@media screen and (max-width: 320px) {*/
+	/*ul.nav li { margin: 0; padding: 0 0.3em;}*/
+	/*ul.nav li:hover, ul.nav.sub li:hover { padding: 0 0.3em; }*/
+/*}*/
