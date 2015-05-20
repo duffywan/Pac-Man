@@ -543,16 +543,16 @@
                                 {"col": 2, "type": "powerpill"},
                                 {"col": 3, "type": "pill"},
                                 {"col": 4, "type": "pill"},
-                                {"col": 5, "type": "wall"},
-                                {"col": 6, "type": "wall"},
+                                {"col": 5, "type": "pill"},
+                                {"col": 6, "type": "pill"},
                                 {"col": 7, "type": "pill"},
                                 {"col": 8, "type": "pill"},
                                 {"col": 9, "type": "pill"},
                                 {"col": 10, "type": "pill"},
                                 {"col": 11, "type": "pill"},
                                 {"col": 12, "type": "pill"},
-                                {"col": 13, "type": "wall"},
-                                {"col": 14, "type": "wall"},
+                                {"col": 13, "type": "pill"},
+                                {"col": 14, "type": "pill"},
                                 {"col": 15, "type": "pill"},
                                 {"col": 16, "type": "pill"},
                                 {"col": 17, "type": "powerpill"},
@@ -1426,8 +1426,8 @@
         buildWall(context_walls, 2, 10, 1, 1);
         buildWall(context_walls, 15, 10, 1, 1);
         buildWall(context_walls, 7, 10, 4, 1);
-        buildWall(context_walls, 4, 11, 2, 2);
-        buildWall(context_walls, 12, 11, 2, 2);
+        //buildWall(context_walls, 4, 11, 2, 2);
+        //buildWall(context_walls, 12, 11, 2, 2);
         /* ------------ End Pre-Build Walls  ------------ */
 
 // Check if a new cache is available on page load.
