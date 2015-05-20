@@ -450,8 +450,8 @@
                                 {"col": 1, "type": "wall"},
                                 {"col": 2, "type": "wall"},
                                 {"col": 3, "type": "pill"},
-                                {"col": 4, "type": "wall"},
-                                {"col": 5, "type": "wall"},
+                                {"col": 4, "type": "pill"},
+                                {"col": 5, "type": "pill"},
                                 {"col": 6, "type": "pill"},
                                 {"col": 7, "type": "pill"},
                                 {"col": 8, "type": "pill"},
@@ -460,8 +460,8 @@
                                 {"col": 11, "type": "pill"},
                                 {"col": 12, "type": "pill"},
                                 {"col": 13, "type": "pill"},
-                                {"col": 14, "type": "wall"},
-                                {"col": 15, "type": "wall"},
+                                {"col": 14, "type": "pill"},
+                                {"col": 15, "type": "pill"},
                                 {"col": 16, "type": "pill"},
                                 {"col": 17, "type": "wall"},
                                 {"col": 18, "type": "wall"}
@@ -473,7 +473,7 @@
                                 {"col": 1, "type": "wall"},
                                 {"col": 2, "type": "wall"},
                                 {"col": 3, "type": "pill"},
-                                {"col": 4, "type": "wall"},
+                                {"col": 4, "type": "pill"},
                                 {"col": 5, "type": "wall"},
                                 {"col": 6, "type": "wall"},
                                 {"col": 7, "type": "wall"},
@@ -484,7 +484,7 @@
                                 {"col": 12, "type": "wall"},
                                 {"col": 13, "type": "wall"},
                                 {"col": 14, "type": "wall"},
-                                {"col": 15, "type": "wall"},
+                                {"col": 15, "type": "pill"},
                                 {"col": 16, "type": "pill"},
                                 {"col": 17, "type": "wall"},
                                 {"col": 18, "type": "wall"}
@@ -1415,8 +1415,8 @@
 
         buildWall(context_walls, 0, 7, 2, 2);
         buildWall(context_walls, 16, 7, 2, 2);
-        buildWall(context_walls, 3, 7, 2, 2);
-        buildWall(context_walls, 13, 7, 2, 2);
+        //(context_walls, 3, 7, 2, 2);
+        //buildWall(context_walls, 13, 7, 2, 2);
 
         buildWall(context_walls, 4, 8, 2, 2);
         buildWall(context_walls, 12, 8, 2, 2);
