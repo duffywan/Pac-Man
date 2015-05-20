@@ -18,6 +18,7 @@
    console.log(window.parent === window);
    isOngoing = false;
      function gotStartMatch(params) {
+         $('#playerName').off("focus");
 		// if (!isOngoing) {
 			 game.newGame();
 		 //}
