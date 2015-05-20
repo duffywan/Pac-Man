@@ -228,7 +228,7 @@
             this.reset = function () {
             }
             this.newGame = function () {
-                game.gameOver = false;
+                game.pause = false;
                 this.init(0);
                 this.pauseResume();
             }
@@ -1344,7 +1344,7 @@
                     realTimeSimpleService.endMatch([1]);
                     ////var input = "<div id='highscore-form'><input type='text' id='playerName'/><span class='button' id='score-submit' onClick='addHighscore();'>save</span></div>";
                     //game.showMessage("Game over", "Total Score: " + game.score.score);
-                    game.gameOver = true;
+                    game.pause = true;
                     //$('#playerName').focus();
                 }
                 game.drawHearts(this.lives);
