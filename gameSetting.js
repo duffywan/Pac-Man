@@ -14,16 +14,16 @@
    console.log(window.parent === window);
    isOngoing = false;
      function gotStartMatch(params) {
-		 if (!isOngoing) {
+		// if (!isOngoing) {
 			 game.newGame();
-		 }
+		 //}
 		 console.log("start match");
     isOngoing = true;
     var yourPlayerIndex = params.yourPlayerIndex;
     var playersInfo = params.playersInfo;
     var numberOfPlayers = playersInfo.length;
-    realTimeSimpleService.sendReliableMessage('Reliable');
-    realTimeSimpleService.sendUnreliableMessage('Unreliable');
+    //realTimeSimpleService.sendReliableMessage('Reliable');
+    //realTimeSimpleService.sendUnreliableMessage('Unreliable');
     console.log("gotStartMatch: yourPlayerIndex=" + yourPlayerIndex + " numberOfPlayers=" + numberOfPlayers);
     var scores = [];
     for (var i = 0; i < numberOfPlayers; i++) {
