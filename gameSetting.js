@@ -1338,10 +1338,9 @@
                 this.lives--;
                 console.log("pacman died, " + this.lives + " lives left");
                 if (this.lives <= 0) {
-                    //var input = "<div id='highscore-form'><input type='text' id='playerName'/><span class='button' id='score-submit' onClick='addHighscore();'>save</span></div>";
-                    //game.showMessage("Game over", "Total Score: " + game.score.score + input);
-                    //game.gameOver = true;
-                    //$('#playerName').focus();
+                    isOngoing = false;
+                    game.showMessage("Game over");
+                    game.gameOver = true;
                 }
                 game.drawHearts(this.lives);
             }
