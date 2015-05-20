@@ -228,6 +228,7 @@
             this.reset = function () {
             }
             this.newGame = function () {
+                game.gameOver = true;
                 this.init(0);
                 this.pauseResume();
             }
