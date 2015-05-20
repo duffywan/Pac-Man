@@ -1500,25 +1500,25 @@
             /*Hammer('#canvas-container').on("tap", function(event) {
              if (!(game.gameOver == true))	game.pauseResume();
              });*/
-            Hammer('.container').on("swiperight", function (event) {
+            Hammer('.gameArea').on("swiperight", function (event) {
                 if ($('#game-content').is(":visible")) {
                     event.gesture.preventDefault();
                     pacman.directionWatcher.set(right);
                 }
             });
-            Hammer('.container').on("swipeleft", function (event) {
+            Hammer('.gameArea').on("swipeleft", function (event) {
                 if ($('#game-content').is(":visible")) {
                     event.gesture.preventDefault();
                     pacman.directionWatcher.set(left);
                 }
             });
-            Hammer('.container').on("swipeup", function (event) {
+            Hammer('.gameArea').on("swipeup", function (event) {
                 if ($('#game-content').is(":visible")) {
                     event.gesture.preventDefault();
                     pacman.directionWatcher.set(up);
                 }
             });
-            Hammer('.container').on("swipedown", function (event) {
+            Hammer('.gameArea').on("swipedown", function (event) {
                 if ($('#game-content').is(":visible")) {
                     event.gesture.preventDefault();
                     pacman.directionWatcher.set(down);
