@@ -105,19 +105,6 @@ ul.nav a, ul.nav a:link, ul.nav a:active, ul.nav a:visited, ul.nav a:hover, ul.n
 	}
 
 .header { display: none;}
-	
-.header, .content, .footer { 
-	margin: 30px;
-	max-width: 100%;
-	background: rgba(0,0,0,0.4);
-	color: rgba(255,255,255,0.9);
-	color/*\**/: rgb(250,250,250)\9;
-	padding: 4em;
-    width: 100%
--webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
--moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.75);
-box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.75);
-	}
 
 .main a, .main  a:link, .main  a:active, .main  a:visited {
 	/*color: rgba(20,20,20,0.9);
@@ -138,35 +125,7 @@ box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.75);
 	text-decoration: underline; 
 	color: #367e20;
 	}
-	
-.content { 
-    min-height: 400px;
-}
 
-
-.logo {
-	width: 220px;
-	display: block;
-	margin: 30px auto 10px auto;
-	
-	}
-	
-.social{
-	text-transform: none;
-	font-size: 40px;
-	text-align:center;
-	line-height: 55px;
-	vertical-align: top;
-	}
-
-.social a, .social  a:link, .social a:active, .social a:visited, .social a:hover, .social a:focus { 
-    /*color: rgb(31, 52, 4); - dark green */ 
-    color: rgba(0,0,0,0.55);
-    text-decoration: none;
-	transition-property: opacity;
-	transition-duration: 0.3s;
-    }
-.social a:hover {opacity: 0.8;}
 
 /*---------------------------------------------------------------------
 
