@@ -11,7 +11,6 @@
    // resizeGameAreaService.setWidthToHeight(1);
    setRealTimeSimpleService(realTimeSimpleService);
    console.log(realTimeSimpleService);
-   console.log("1231231");
    console.log(window.parent === window);
    isOngoing = false;
      function gotStartMatch(params) {
