@@ -1339,8 +1339,8 @@
                 console.log("pacman died, " + this.lives + " lives left");
                 if (this.lives <= 0) {
                     isOngoing = false;
-                    realTimeSimpleService.sendReliableMessage([1,0].toString());
-                    realTimeSimpleService.endMatch([1,0]);
+                    realTimeSimpleService.sendReliableMessage([1].toString());
+                    realTimeSimpleService.endMatch([1]);
                     ////var input = "<div id='highscore-form'><input type='text' id='playerName'/><span class='button' id='score-submit' onClick='addHighscore();'>save</span></div>";
                     //game.showMessage("Game over", "Total Score: " + game.score.score);
                     //game.gameOver = true;
