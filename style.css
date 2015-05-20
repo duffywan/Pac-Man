@@ -108,12 +108,12 @@ ul.nav a, ul.nav a:link, ul.nav a:active, ul.nav a:visited, ul.nav a:hover, ul.n
 	
 .header, .content, .footer { 
 	margin: 30px;
-	max-width: 700px;
+	max-width: 100%;
 	background: rgba(0,0,0,0.4);
 	color: rgba(255,255,255,0.9);
 	color/*\**/: rgb(250,250,250)\9;
 	padding: 4em;
-    width: 700px;
+    width: 100%
 -webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.75);
 box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.75);
@@ -180,27 +180,8 @@ box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.75);
     vertical-align: top;
     }
 
-.box2 {
-	width: 50%;
-	max-width: 320px;
-	}
-
-.box3 {
-	width: 33%;
-	max-width: 205px;
-	}
-
 div + .box2, div +  { margin: 5px !important;}
 
-.portfolio-tile { 
-    width: 200px;
-    height: 200px;
-    border: 1px solid rgba(0,0,0,0.5);
-	background: rgba(0,0,0,0.5);
-    display: inline-block;
-    margin-right: 10px;
-	margin-bottom: 10px;
-}
 
 .portfolio-tile:hover {
 	opacity: 0.8;
