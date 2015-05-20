@@ -10,7 +10,8 @@
           function ($log, realTimeSimpleService, randomService, resizeGameAreaService) {
 
 
-              resizeGameAreaService.setWidthToHeight(1.38);
+   resizeGameAreaService.setWidthToHeight(1.38);
+   $scope.lines = [];
 
    setRealTimeSimpleService(realTimeSimpleService);
    console.log(realTimeSimpleService);
@@ -41,6 +42,8 @@
   }
   function gotEndMatch(endMatchScores) {
     console.log("gotEndMatch:" + endMatchScores);
+    isOngoing = false;
+    $scope.lines.push("end match scores=" + endMatchScores);
   }
    
   function setRealTimeSimpleService(realTimeSimpleService) {
