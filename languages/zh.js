@@ -3,7 +3,5 @@ window.angularTranslationsLoaded('zh',{
 "RULES_SLIDE2":"在手机上用手势来移动吃豆人。",
 "RULES_SLIDE3":"吃尽可能多的豆豆。",
 "NEW_TO_PACMAN":"第一次玩吃豆人",
-"SCORE":"分数",
-"LIVES":"生命",
 "CLOSE":"关闭"
 });
