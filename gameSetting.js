@@ -246,7 +246,7 @@
                 for (i = 0; i < count; i++) {
                     html += " <img src='imgs/heart.png'>";
                 }
-                $(".lives").html("Lives: " + html);
+                $(".lives").html(html);
 
             }
             this.showContent = function (id) {
