@@ -678,6 +678,7 @@
             }
             this.refresh = function (h) {
                 $(h).html(this.score);
+
             }
 
         }
