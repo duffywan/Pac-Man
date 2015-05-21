@@ -648,7 +648,7 @@
                 clyde.start();
             }
             this.check = function () {
-                if ((this.pillCount == 0) && game.running) {
+                if ((this.pillCount == 0) && game.running && isOngoing) {
                     this.nextLevel();
                 }
             }
