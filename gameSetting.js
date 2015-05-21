@@ -233,10 +233,12 @@
                 this.pauseResume();
             }
             this.nextLevel = function () {
-                this.level++;
-                console.log("Level " + game.level);
-                game.showMessage("Level " + game.level, "Level up! Click to continue!");
-                this.init(1);
+                isOngoing = false;
+                realTimeSimpleService.sendReliableMessage([0].toString());
+                realTimeSimpleService.endMatch([0]);
+                ////var input = "<div id='highscore-form'><input type='text' id='playerName'/><span class='button' id='score-submit' onClick='addHighscore();'>save</span></div>";
+                //game.showMessage("Game over", "Total Score: " + game.score.score);
+                game.pause = true;
             }
             this.drawHearts = function (count) {
                 var html = "";
@@ -675,7 +677,7 @@
                 this.score += i;
             }
             this.refresh = function (h) {
-                $(h).html("SCORE: " + this.score);
+                $(h).html(this.score);
             }
 
         }
@@ -1343,7 +1345,7 @@
                     realTimeSimpleService.sendReliableMessage([1].toString());
                     realTimeSimpleService.endMatch([1]);
                     ////var input = "<div id='highscore-form'><input type='text' id='playerName'/><span class='button' id='score-submit' onClick='addHighscore();'>save</span></div>";
-                    //game.showMessage("Game over", "Total Score: " + game.score.score);
+                    //game.showMessage("", "Total Score: " + game.score.score);
                     game.pause = true;
                     //$('#playerName').focus();
                 }
@@ -1426,8 +1428,7 @@
         buildWall(context_walls, 2, 10, 1, 1);
         buildWall(context_walls, 15, 10, 1, 1);
         buildWall(context_walls, 7, 10, 4, 1);
-        //buildWall(context_walls, 4, 11, 2, 2);
-        //buildWall(context_walls, 12, 11, 2, 2);
+        //
         /* ------------ End Pre-Build Walls  ------------ */
 
 // Check if a new cache is available on page load.

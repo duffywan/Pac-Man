@@ -173,8 +173,9 @@
 	
 	<!-- main game content -->
 	<div class="game wrapper">
-		<div class="score">Score:</div>
-		<div class="lives">Lives: </div>
+		<div class="score">{{ 'SCORE' | translate }}</div>
+        <span id="number"></span>
+		<div class="lives">{{ 'LIVES' | translate }}</div>
 
 		<!-- canvas is splitted into 18x13 fields -->
 		<div id="canvas-container">
